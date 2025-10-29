@@ -1,2 +1,1 @@
-# dom-manupulation
-# DOM-manipulation
+# JavaScript DOM Manipulation Real Life Examples
