@@ -1,11 +1,28 @@
-console.log("document", document)
-console.log('window', window)
+// console.log('window', window)
+// console.log("document", document)
 
+
+// selecting elements
 const postTitle = document.getElementById('postTitle')
 const postContent = document.getElementById('postContent')
 const createPostBtn = document.getElementById('createPostBtn')
 const postsContainer = document.getElementById('postsContainer')
 const header = document.getElementById('header')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const createPostElement = (post) => {
@@ -25,22 +42,24 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     // mouseover 
-
     header.addEventListener('mouseover', (e) => {
-        console.log(e.target)
-        header.style.backgroundColor = 'red'
-        header.style.color = 'white'
-        console.log(e.target.tagName)
+        // console.log(e.target)
+        // header.style.backgroundColor = 'green'
+        // header.style.color = 'blue'
+        // console.log(e.target.tagName)
         if (e.target.tagName === 'H1') {
-            header.style.backgroundColor = 'blue'
-            header.style.color = 'white'
+            header.style.backgroundColor = 'yellow'
+            header.style.color = 'red'
         }
     })
 
+
     header.addEventListener('mouseout', () => {
         header.style.backgroundColor = 'white'
-        header.style.color = 'black'
+        header.style.color = 'red'
     })
+
+
 
 
     // load data from the localstorage
